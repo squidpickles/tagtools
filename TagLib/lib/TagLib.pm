@@ -25,7 +25,7 @@ our @EXPORT = qw(
 	
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 require XSLoader;
 XSLoader::load('TagLib', $VERSION);
@@ -34,7 +34,6 @@ XSLoader::load('TagLib', $VERSION);
 
 1;
 __END__
-# Below is stub documentation for your module. You'd better edit it!
 
 =head1 NAME
 
@@ -73,7 +72,7 @@ Kevin Dorne, E<lt>kevin@catalyst.net.nzE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2004 by Kevin Dorne
+Copyright (C) 2004,2005 by Kevin Dorne
 
 Licensing terms to come later.  For now:
 
