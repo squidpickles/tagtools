@@ -10,6 +10,9 @@ extern "C" {
 
 #include "ppport.h"
 
+#undef do_open
+#undef do_close
+
 #include <tstring.h>
 #include <fileref.h>
 #include <tag.h>
