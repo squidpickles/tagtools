@@ -1,10 +1,11 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 
 #
 # $Id: tagrename 228 2004-11-26 01:03:58Z sweetpea $
 #
 
 use strict;
+use warnings
 use TagLib;
 
 ################
@@ -46,13 +47,13 @@ if (! -f $file) {
 
   my $max_text = $MAX_LENGTH - $TRACKSIZE - length($extension);
 
-  # Hooray TagLib.  If only I could get it to pass back an actual hash...
-  my %tag = %{&TagLib::read_tag($file)} or die "Error getting tag for '$file'";
+  # Hooray TagLib
+  my $tag = TagLib::read_tag($file) or die "Error getting tag for '$file'";
 
-  my $artist = $tag{'artist'};
-  my $album = $tag{'album'};
-  my $title = $tag{'title'};
-  my $tracknum = $tag{'track'};
+  my $artist = $tag->{'artist'};
+  my $album = $tag->{'album'};
+  my $title = $tag->{'title'};
+  my $tracknum = $tag->{'track'};
 
   # Track numbers are lovely for non-id3 music players, if they're present
   if ($tracknum > 0) {

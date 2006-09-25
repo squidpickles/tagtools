@@ -44,12 +44,12 @@ TagLib - Perl extension for reading audio metadata tags
   use TagLib;
 
   my $filename = 'test.mp3';
-  my $tag = %{&TagLib::read_tag($filename)};
+  my $tag = TagLib::read_tag($filename);
 
-  my $artist = $tag{'artist'};
-  my $album = $tag{'album'};
-  my $title = $tag{'title'};
-  my $track = $tag{'track'};
+  my $artist = $tag->{'artist'};
+  my $album = $tag->{'album'};
+  my $title = $tag->{'title'};
+  my $track = $tag->{'track'};
 
 =head1 DESCRIPTION
 
