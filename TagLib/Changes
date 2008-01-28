@@ -1,5 +1,8 @@
 Revision history for Perl extension TagLib.
 
+0.03  Mon Jan 28 23:02:21 2008
+  - Documentation improvements, read_tag can be exported
+
 0.02  Thu Oct 06 16:47:41 2005
   - Updated for taglib 1.4, gcc 3.4
 

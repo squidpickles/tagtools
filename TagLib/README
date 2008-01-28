@@ -1,4 +1,4 @@
-TagLib version 0.02
+TagLib version 0.03
 ===================
 
 This connects Perl with Scott Wheeler's TagLib.  It's a good thing, because
@@ -22,11 +22,9 @@ This module requires these other modules and libraries:
 
  TagLib 1.4
 
-COPYRIGHT AND LICENCE
+COPYRIGHT AND LICENSE
 
 Copyright (C) 2004,2005 by Kevin Dorne
-
-For now, I'll leave it at this... licensing to change in a later version.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.5 or,

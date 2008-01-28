@@ -5,4 +5,5 @@ ppport.h
 README
 TagLib.xs
 t/TagLib.t
+t/foo.mp3
 lib/TagLib.pm
