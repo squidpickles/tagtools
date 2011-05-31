@@ -54,7 +54,7 @@ if (! -f $file) {
 			$extension = lc($extension);
 			$newname = "$BASEDIR/$last_artist/$last_album/album$extension";
 		} else {
-			warn "New directory found for '$file'; skipping\n";
+			warn "Unknown artist/album for '$file'; skipping\n";
 			next;
 		}
 	} else {
