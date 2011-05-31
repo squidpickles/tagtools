@@ -1,4 +1,3 @@
-CXX=c++
 CONF=`taglib-config --libs --cflags`
 
 all: retag tagdump cptag
