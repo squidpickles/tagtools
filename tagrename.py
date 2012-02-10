@@ -74,7 +74,7 @@ last_album = None
 
 # Yay! xargs is our friend...
 for filename in sys.argv[1:]:
-	filename = os.path.normpath(filename).decode('utf-8')
+	filename = os.path.abspath(filename).decode('utf-8')
 	if not os.path.isfile(filename):
 		sys.stderr.write(u"file '{}' does not exist\n".format(filename))
 		continue
