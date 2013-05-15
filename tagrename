@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 
-#
-# $Id$
-#
-
 import taglib
 import os
 import sys
