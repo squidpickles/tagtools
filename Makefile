@@ -1,15 +1,15 @@
-CONF=`taglib-config --libs --cflags`
+CONF=$(shell pkg-config --libs --cflags taglib)
 
 all: retag tagdump cptag
 
 retag: retag.cpp
-	${CXX} ${CONF} ${CXXFLAGS} ${LDFLAGS} -o $@ $<
+	${CXX} ${CXXFLAGS} ${LDFLAGS} -o $@ $< ${CONF}
 
 cptag: cptag.cpp
-	${CXX} ${CONF} ${CXXFLAGS} ${LDFLAGS} -o $@ $<
+	${CXX} ${CXXFLAGS} ${LDFLAGS} -o $@ $< ${CONF}
 
 tagdump: tagdump.cpp
-	${CXX} ${CONF} ${CXXFLAGS} ${LDFLAGS} -o $@ $<
+	${CXX} ${CXXFLAGS} ${LDFLAGS} -o $@ $< ${CONF}
 
 clean:
 	rm -f retag tagdump cptag

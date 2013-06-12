@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 			TagLib::Tag *tag = f.tag();
 			const TagLib::PropertyMap properties = tag->properties();
 			for (TagLib::PropertyMap::ConstIterator property = properties.begin(); property != properties.end(); ++property) {
-				std::cout << property->first << ": " << property->second << std::endl;
+				std::cout << property->first << ": " << property->second.toString() << std::endl;
 			}
 		}
 	}
