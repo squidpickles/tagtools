@@ -11,5 +11,7 @@ Contents
  * __retag__     - reads in a tag and writes it back to the file, possibly
                    correcting some errors and standardizing padding
  * __tagdump__   - prints out some basic metadata about the file
- * __tagrename__ - renames files based on their tags. Requires tagpy.
+ * __tagrename__ - renames files based on their tags. Requires python-taglib.
  * __TagLib__    - A Perl extension for talking to TagLib. Probably obsolete.
+
+You can find python-taglib at https://code.google.com/p/python-taglib/.
