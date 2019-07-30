@@ -31,10 +31,10 @@ kTrackSize = 3
 kSupportedExtensions = (u'.mp3', u'.ogg', u'.flac', u'.mpc', u'.cue', u'.log')
 
 # characters to strip from names
-kCharsToStrip = re.compile(r'["\\\*\?<>|,;]')
+kCharsToStrip = re.compile(r'["\\\*\?|,;]')
 
 # characters to replace with dashes
-kCharsToDash = re.compile(r'[/:]')
+kCharsToDash = re.compile(r'[/:<>]')
 
 # characters to replace with spaces
 kCharsToSpace = re.compile(r'[_]')
