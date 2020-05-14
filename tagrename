@@ -55,7 +55,10 @@ def clean(name, max_text):
 	# And changes ugly underscores to spaces -- we *are* using modern OSs, right?
 	name = kCharsToSpace.sub(u' ', name)
 	# And wraps text
-	wrapped = gTextWrapper.wrap(name)[0]
+	if not gTextWrapper.wrap(name):
+		wrapped = name
+	else:
+		wrapped = gTextWrapper.wrap(name)[0]
 	if name != wrapped:
 		truncated = True
 	name = wrapped
